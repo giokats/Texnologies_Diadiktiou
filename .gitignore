@@ -1,0 +1,8 @@
+*.*~
+
+bin/*
+
+doc/bin/*
+!doc/bin/ergasia.pdf
+
+doc/references.bib.bak
