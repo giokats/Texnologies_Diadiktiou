@@ -47,17 +47,17 @@ table {
 
 html {
     margin-bottom: 1px;
-	height: 100% !important;
-	background-color: #dfdfdf;
+    height: 100% !important;
+    background-color: #dfdfdf;
 }
 
 body {
-	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #827C78;
-	line-height: 18px;
+    font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #827C78;
+    line-height: 18px;
     margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 hr {
@@ -71,8 +71,19 @@ nav {
 }
 
 aside {
-	height: 120px;
-	width:100%;
+
+    float: left;
+	width: 160px;
+	padding:8px;
+    margin: 10px;
+    border: 1px dashed #dfdfdf;
+    background-color: #f8f8f8;     
+
+}
+
+article {
+	width: 100%;
+    background-color:#ffffff
 }
 
 /* 2.1 Headings */
@@ -360,12 +371,7 @@ fieldset table.th {
 /* left */
 
 #leftnav {
-    float: left;
-	width: 160px;
-	padding:8px;
-    margin: 10px;
-    border: 1px dashed #dfdfdf;
-    background-color: #f8f8f8;      
+ 
 }
 
 #navcontainer {
