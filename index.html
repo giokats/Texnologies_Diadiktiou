@@ -27,6 +27,7 @@
   <!-- Το δεύτερο μέρος του εγγράφου HTML είναι το body, που περιλαμβάνει το περιεχόμενο  του εγγράφου. Το περιεχόμενο του body είναι αυτό που φαίνεται μέσα στην περιοχή ιστοσελίδας του φυλλομετρητή -->
 <body>
 
+<!-- Η ετικέτα <div> ορίζει ένα τμήμα της HTML σελίδας. Συνήθως χρησιμοποιείται για την ομαδοποίση στοιχείων στην σελίδα και την διαμόρφωση τους με css. Η διαμόρφωση css για όλα τα div της σελίδας μας βρίσκονται σε ξεχωριστό αρχείο (το theme.css) -->
 <div id="container">
 
   <!-- Ετικέτα διαμόρφωσης του εγγράφου. Το tag <nav> καθoρίζει ένα σετ από διασυνδεδεμένα λινκ -->
@@ -34,16 +35,18 @@
 
     <!-- Η ετικά <div>  ορίζει ένα τμήμα στο HTML έγγραφο. Το στυλ αυτού του τμήματος ορίζεται στο theme.css-->
     <div class="user"><b><img src="images/user.png" alt="user"/>&nbsp;</b> 
+             <!-- Ετικέτα σύνδεσης ενός σημείου μιας ιστοσελίδας με κάποια άλλη ιστοσελίδα  -->
             <a href="http://gunet2.cs.unipi.gr/eclass/login_form.php" title="Είσοδος">Είσοδος</a>           
     </div>
 
     <!-- Η ετικά <class> καθορίζει ένα ή περισσότερα ονόματα κλάσεων για ένα στοιχείο. Χρησιμοποιείται για τον ορισμό στυλ. Το στυλ αυτού του τμήματος ορίζεται στο theme.css-->
-    <a class="logo" title="GUNet eClass" href="/eclass/">
+    <a class="logo" title="GUNet eClass" href="http://gunet2.cs.unipi.gr/eclass/">
     </a>
 
     <!-- Η ετικά <div>  ορίζει ένα τμήμα στο HTML έγγραφο. Το στυλ αυτού του τμήματος ορίζεται στο theme.css-->
     <div id="search">
 
+      <!-- Η ετικέτα <form> χρησιμοποιείται για να δημιουργήσει μία φόρμα HTML για την εισαγωγή στοιχείων από τον χρήστη.-->
       <form name="form1" id="form1" method="post" >   
 
       <!-- Η ετικέτα <input> xρησιμοποιείται για την συλλογή δεδομένων σε μία γραμμή κειμένου -->    
@@ -70,7 +73,7 @@
         <li class="first"><a href="http://gunet2.cs.unipi.gr/eclass/">Αρχική Σελίδα</a></li>
 
         <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
-        <li>&#187; <a href="http://gunet2.cs.unipi.gr/eclass/courses/TME121/index.php">ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ (μέρος του &quot;αντικειμενοστρεφής προγραμματ...</a></li>
+        <li>&#187; <a href="http://gunet2.cs.unipi.gr/eclass/courses/TME121/index.php"> ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ (μέρος του &quot;αντικειμενοστρεφής προγραμματ...</a></li>
 
         <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
         <li>&#187; Ταυτότητα Μαθήματος</li>
@@ -87,6 +90,7 @@
   <!-- Ετικέτα διαμόρφωσης του εγγράφου. Το tag <section> καθορίζει ενότητες σε μία σελίδα, όπως είναι τα  κεφάλαια, οι κεφαλίδες, κ.λ.π.-->
   <section>
 
+    <!-- Η ετικά <div>  ορίζει ένα τμήμα στο HTML έγγραφο. Το στυλ αυτού του τμήματος ορίζεται στο theme.css-->
     <div id="content">  
 
       <!--Η ετικέτα <aside> ορίζει κάποιο επιπρόσθετο περιεχόμενο. Όταν χρησιμοποιείται εκτός του tag <article> το περιεχόμενο θα πρέπει να συσχετίζεται με το site -->
@@ -99,27 +103,27 @@
 
             <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
             <li class="">
-            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/announcements/announcements.php?course=TME121"><img src="images/announcements_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Ανακοινώσεις</a></div>
+            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/announcements/announcements.php?course=TME121"> <img src="images/announcements_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Ανακοινώσεις</a></div>
             </li>
 
             <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
             <li class="">
-            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/agenda/agenda.php?course=TME121"><img src="images/calendar_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Ατζέντα</a></div>
+            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/agenda/agenda.php?course=TME121"> <img src="images/calendar_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Ατζέντα</a></div>
             </li>
 
             <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
             <li class="">
-            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/document/document.php?course=TME121"><img src="images/docs_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Έγγραφα</a></div>
+            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/document/document.php?course=TME121"> <img src="images/docs_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Έγγραφα</a></div>
             </li>
 
             <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
             <li class="">
-            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/course_description/?course=TME121"><img src="images/description_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Πληροφορίες Μαθήματος</a></div>
+            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/course_description/?course=TME121"> <img src="images/description_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Πληροφορίες Μαθήματος</a></div>
             </li>
 
             <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας-->
             <li class="">
-            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/link/link.php?course=TME121"><img src="images/links_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Σύνδεσμοι</a></div>
+            <div><a href="http://gunet2.cs.unipi.gr/eclass/modules/link/link.php?course=TME121"> <img src="images/links_on.png" width="16" height="16" alt="" style="padding-bottom: 8px;" />Σύνδεσμοι</a></div>
             </li>
           </ul>
          </div>
@@ -130,7 +134,7 @@
     <!-- Ετικέτα διαμόρφωσης του εγγράφου.-->
   <article>
     <div id="content_main">
-      <div class="lesson"><a href='http://gunet2.cs.unipi.gr/eclass/courses/TME121/'>ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ (μέρος του &quot;αντικειμενοστρεφής προγραμματισμός και τεχνολογίες διαδικτύου&quot;) </a>
+      <div class="lesson"><a href='http://gunet2.cs.unipi.gr/eclass/courses/TME121/'> ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ (μέρος του &quot;αντικειμενοστρεφής προγραμματισμός και τεχνολογίες διαδικτύου&quot;) </a>
       </div>
     
       <div id='content_course'>
@@ -144,54 +148,63 @@
                 <div class='descr_title'>Περιγραφή
                 </div>
 
+                <!-- Το tag <p> δηλώνει το ξεκίνημα μιας νέας παραγράφου-->
                 <p>Στόχος του μαθήματος είναι να παρουσιάσει τις αρχές λειτουργίας του Διαδικτύου και να περιγράψει τις βασικές τεχνολογίες και γλώσσες προγραμματισμού που χρησιμοποιούνται στην ανάπτυξη εφαρμογών στον Παγκόσμιο Ιστό. Το πρωτο μέρος του μαθήματος είναι εισαγωγικό και  παρουσιάζει με συνοπτικό τρόπο τις βασικές τεχνολογίες και τα πρωτόκολλα, στα οποία στηρίζεται το Διαδίκτυο και οι υπηρεσίες του. Το δεύτερο μέρος περιλαμβάνει τις περισσότερες διαλέξεις και περιγράφει τη γλώσσα μορφοποίησης HTML, εκδόσεις 4 και 5, το πρότυπο XHTML και τα πρότυπα CSS και CSS3. Επίσης, περιγράφει την ανάπτυξη δυναμικών εφαρμογών, που εκτελούνται στην πλευρά του πελάτη, με τη χρήση της γλώσσας σεναρίων  JavaScript, καθώς και την ανάπτυξη δυναμικών εφαρμογών, που εκτελούνται στην πλευρά του εξυπηρετητή, με τη χρήση της γλώσσας PHP.
                 </p>
               </div>
             </td>
 
             <td style="width:200 valign:top">
-
+               
+               <!-- Ετικέτα ορισμού ενός πίνακα ο οποίος πέρνει την διαμόρφωση του από την κλάση 'tbl_courseid'.-->
                <table class='tbl_courseid' style="width:200">
+                 <!-- Ετικέτα ορισμού μίας γραμμής του πίνακα.-->
                  <tr class='title1'>
+                   <!-- Ετικέτα ορισμού ενός κελιού.-->
                    <td  class='title1'>Ταυτότητα Μαθήματος
                    </td>
                  </tr>
-        
+ 
+                 <!-- Ετικέτα ορισμού μίας γραμμής του πίνακα.-->       
                  <tr>
+                   <!-- Ετικέτα ορισμού ενός κελιού.-->
                    <td class='smaller'>
                      <ul class='custom_list'>
+                       <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας και ταυτόχρονα ότι είναι bold η λέξη-->
                        <li><b>Κωδικός</b>: TME121</li>
+                       <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας και ταυτόχρονα ότι είναι bold η λέξη-->
                        <li><b>Εκπαιδευτές</b>: Χρήστος Δουληγέρης, Ιωάννης-Χρήστος Παναγιωτόπουλος</li>
+                       <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας και ταυτόχρονα ότι είναι bold η λέξη-->
                        <li><b>Σχολή - Τμήμα</b>: Μεταπτυχιακό &quot;Πληροφορική&quot;</li>
+                       <!-- Ετικέτα για να δηλώσει ότι είναι στοιχείο της λίστας και ταυτόχρονα ότι είναι bold η λέξη-->
                        <li><b>Τύπος</b>: Μεταπτυχιακό</li>
                      </ul>
                    </td>
                  </tr>
                </table>
-    
-           <br/>
 
-        <table class='tbl_courseid' style="width:200">
-          <tr class='title1'>
-            <td class='title1'>Εργαλεία</td>
-            <td class='left'>
-              <a href="mailto:cdoulig@unipi.gr"><img src='images/email.png' alt='Επικοινωνία με τους εκπαιδευτές' title='Επικοινωνία με τους εκπαιδευτές' /></a>&nbsp;&nbsp;
-              <a href='http://gunet2.cs.unipi.gr/eclass/courses/TME121/index.php' title='ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ (μέρος του &quot;αντικειμενοστρεφής προγραμματισμός και τεχνολογίες διαδικτύου&quot;) ' class='jqbookmark'><img src='images/bookmark.png' alt='Προσθήκη στους σελιδοδείκτες' title='Προσθήκη στους σελιδοδείκτες' /></a>&nbsp;&nbsp;
-              <span class='feed'><a href='http://gunet2.cs.unipi.gr/eclass/modules/announcements/rss.php?c=TME121'><img src='images/feed.png' alt='Ροή RSS' title='Ροή RSS' /></a></span>&nbsp;</td>
-         </tr>
-       </table>
+             <!-- Το tag <br> αναγκάζει μια αλλαγή γραμμής χωρίς κάποιο επιπρόσθετο κενό μεταξύ των γραμμών-->    
+             <br/>
+         
+          <!-- Ετικέτα ορισμού ενός πίνακα ο οποίος πέρνει την διαμόρφωση του από την κλάση 'tbl_courseid'.-->
+          <table class='tbl_courseid' style="width:200">
+            <tr class='title1'>
+              <td class='title1'>Εργαλεία</td>
+              <td class='left'>
+                <!-- Το χαρακτηριστικό mailto σε ένα σύνδεσμο επιτρέπει την αποστολή ηλεκτρονικού ταχυδρομείου στη διεύθυνση που προσδιορίζεται ως τιμή του χαρακτηριστικού-->
+                <a href="mailto:cdoulig@unipi.gr"> <img src='images/email.png' alt='Επικοινωνία με τους εκπαιδευτές' title='Επικοινωνία με τους εκπαιδευτές' /></a>&nbsp;&nbsp;
+                <!-- Ετικέτα σύνδεσης ενός σημείου μιας ιστοσελίδας με κάποια άλλη ιστοσελίδα  -->
+                <a href='http://gunet2.cs.unipi.gr/eclass/courses/TME121/index.php' title= 'ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ (μέρος του &quot;αντικειμενοστρεφής προγραμματισμός και τεχνολογίες διαδικτύου&quot;) ' class='jqbookmark'><img src='images/bookmark.png' alt='Προσθήκη στους σελιδοδείκτες' title='Προσθήκη στους σελιδοδείκτες' /></a>&nbsp;&nbsp;
+                <!-- Η ετικέτα <span> χρησιμοποιείται για να ομαδοποίήσει τα στοιχεία που περιλαμβάνει. Σε αυτή την περίπτωση και τα δύο εσωτερικά του στοιχεία πέρνουν την διαμόρφωση τους από την κλάση 'feed'.  -->
+                <span class='feed'> <a href='http://gunet2.cs.unipi.gr/eclass/modules/announcements/rss.php?c=TME121'><img src='images/feed.png' alt='Ροή RSS' title='Ροή RSS' /></a></span>&nbsp;</td>
+           </tr>
+         </table>
         
-        <br />
+         <br />
 
-      </td>
-     </tr>
-     </table>
-
-     <table style="width:100%" class='tbl'>
-     <tr>
-     <td></td>
-     </tr>
-  </table>
+        </td>
+       </tr>
+    </table>
 
 
   </div>
