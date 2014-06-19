@@ -1,0 +1,26 @@
+.window {
+width:800px;}
+
+.forma_epilogis {
+background-color:grey; 
+height:500px; 
+width:200px; 
+float:center; 
+text-align:left;
+float:left;}
+
+.stixoia{
+background-color:#00FFCC;
+text-align:center;
+height:500px; 
+width:800px;
+font-size:15pt;
+float:center;}
+
+h1 {color:red;text-align:center; height:100px }
+
+
+
+
+
+
