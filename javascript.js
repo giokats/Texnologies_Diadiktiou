@@ -1,0 +1,77 @@
+
+function SelectChanged2()
+{
+  document.getElementById("arpistkar").style.display="block";
+}
+
+function SelectChanged1()
+{
+  document.getElementById("arpistkar").style.display="none";
+}
+
+
+function paraggelia()
+{
+
+  onoma=document.getElementById('onoma').value;
+  epitheto=document.getElementById('epitheto').value;
+  til=document.getElementById('til').value;
+  epilogi=document.getElementById('pistotiki').value;
+  arithmos=document.getElementById('arithmos').value;
+
+  submitOK="true";
+
+  if(onoma.length=='0')
+  {
+    alert("Λάθος όνομα!");
+    submitOK="false";
+  }
+
+  if(epitheto.length=='0')
+  {
+    alert("Λάθος επίθετο!");
+    submitOK="false";
+  }
+
+  if(til.length!=10||isNaN(til))
+  {
+    alert("Λάθος τηλέφωνο!");
+    submitOK="false";
+  }
+
+  if(epilogi=='2')
+  {
+    if(document.getElementById("arpistkar").style.display=="block")
+    {
+      if(arithmos.length!=16||isNaN(arithmos))
+      {
+        alert("Λάθος αριθμός κάρτας!");
+        submitOK="false";
+      }
+    }
+  }
+
+  if(submitOK=="true")
+  {
+    var answer=confirm("Είστε σίγουρος ότι θέλετε να συνεχίσετε;")
+    if (answer)
+    {
+      alert("Η παραγγελία σας ολοκληρώθηκε επιτυχώς!");
+    }
+    else
+    {
+      akyrwsi();
+    }
+}
+
+}
+
+function akyrwsi()
+{
+  document.getElementById('onoma').value=" ";
+  document.getElementById('epitheto').value=" ";
+  document.getElementById('til').value=" ";
+  document.getElementById('metrita').selected="selected";
+  SelectChanged1();
+}
+
