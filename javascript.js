@@ -63,7 +63,7 @@ function paraggelia()
     if (answer)
     {
       alert("Η παραγγελία σας ολοκληρώθηκε επιτυχώς!");
-    }paraggelia
+    }
     else
     {
       akyrwsi();
