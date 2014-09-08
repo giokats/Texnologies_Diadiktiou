@@ -40,7 +40,7 @@
   <section>
 
      <!-- Η ετικέτα <form> χρησιμοποιείται για να δημιουργήσει μία φόρμα HTML για την εισαγωγή στοιχείων από τον χρήστη.-->
-    <form id="proionta" class="forma_epilogis">
+    <form name="listForm" id="proionta" class="forma_epilogis">
 
       <!-- Ετικέτα επικεφαλίδας. Η ετικέτα αυτή χρησιμοποιείται για να καθορίσει το μέγεθος γραμματοσειράς του κειμένου που περιλαμβάνει. Το h1 είναι η μεγαλύτερη σε μέγεθος επικεφαλίδας και το h6 η μικρότερη.-->
       <h2>Προϊόντα</h2>
@@ -57,23 +57,23 @@
        </tr>
        <tr>
          <!-- Ετικέτα ορισμού ενός κελιού.-->
-         <td>C#</td> <td>20$</td> <td><input type="checkbox" name="proion1" value="20"></td>
+         <td>C#</td> <td>20$</td> <td><input type="checkbox" name="proion" value="20"></td>
        </tr>
        <tr>
          <!-- Η ετικέτα <input> χρησιμοποιείται για την συλλογή δεδομένων σε μία γραμμή κειμένου -->    
-         <td>C++</td> <td>15$</td> <td><input type="checkbox" name="proion2" value="15"></td>
+         <td>C++</td> <td>15$</td> <td><input type="checkbox" name="proion" value="15"onchange="checkTotal()"></td>
        </tr>
        <tr>
-         <td>Java</td> <td>40$</td> <td><input type="checkbox" name="proion4" value="40"></td>
+         <td>Java</td> <td>40$</td> <td><input type="checkbox" name="proion" value="40" onchange="checkTotal()"></td>
        </tr>
        <tr>
-         <td>Visual Basic</td> <td>17$</td> <td><input type="checkbox" name="proion5" value="17"></td>
+         <td>Visual Basic</td> <td>17$</td> <td><input type="checkbox" name="proion" value="17" onchange="checkTotal()"></td>
        </tr>
        <tr>
-         <td>PHP</td> <td>16$</td> <td><input type="checkbox" name="proion6" value="26"></td>
+         <td>PHP</td> <td>16$</td> <td><input type="checkbox" name="proion" value="26" onchange="checkTotal()"></td>
        </tr>
      </table>
-
+	Total: <input type="text" size="5" name="total" value="0"/>
     </form>
 
     <!-- Η ετικά <div>  ορίζει ένα τμήμα στο HTML έγγραφο. Το στυλ αυτού του τμήματος ορίζεται στο theme.css-->

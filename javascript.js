@@ -1,4 +1,4 @@
-// Συναρτήσεις που βοηθάνε στην απόκρυψη/εμφάνιση του 
+﻿// Συναρτήσεις που βοηθάνε στην απόκρυψη/εμφάνιση του 
 // textbox της πιστωτικής κάρτας
 
 function SelectChanged2()
@@ -15,6 +15,18 @@ function SelectChanged1()
 // Ελέγχει αν το μήκος του ονόματος και του επιθέτου είναι ίσο με μηδέν
 // Ελέγχει αν το μήκος του τηλεφώνου είναι διάφορο των 10 ψηφίων
 // Τέλος ελέγχει αν το μήκος της κάρτας είναι 16 ψηφία
+
+function checkTotal() {
+document.listForm.total.value = '';
+var sum = 0;
+for (i=0;i<document.listForm.proion.length;i++) {
+		  if (document.listForm.proion[i].checked) {
+		  	sum = sum + parseInt(document.listForm.proion[i].value);
+		  }
+		}
+document.listForm.total.value = sum + " euro";
+}
+
 
 function paraggelia()
 {
@@ -57,11 +69,16 @@ function paraggelia()
     }
   }
 
+
+
+
   if(submitOK=="true")
   {
-    var answer=confirm("Είστε σίγουρος ότι θέλετε να συνεχίσετε;")
+	
+    var answer=confirm("Tο σύνολο είναι: " + document.listForm.total.value +  "! Είστε σίγουρος ότι θέλετε να συνεχίσετε;")
     if (answer)
     {
+	
       alert("Η παραγγελία σας ολοκληρώθηκε επιτυχώς!");
     }
     else
