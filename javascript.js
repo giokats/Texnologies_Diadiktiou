@@ -24,7 +24,7 @@ for (i=0;i<document.listForm.proion.length;i++) {
 		  	sum = sum + parseInt(document.listForm.proion[i].value);
 		  }
 		}
-document.listForm.total.value = sum + " euro";
+document.listForm.total.value = sum;
 }
 
 
@@ -38,6 +38,12 @@ function paraggelia()
   arithmos=document.getElementById('arithmos').value;
 
   submitOK="true";
+
+if(document.listForm.total.value=='0')
+{
+alert("Παρακαλώ επιλέξτε προιόν!");
+submitOK="false";
+}
 
   if(onoma.length=='0')
   {
@@ -56,6 +62,7 @@ function paraggelia()
     alert("Λάθος τηλέφωνο!");
     submitOK="false";
   }
+
 
   if(epilogi=='2')
   {
@@ -96,6 +103,12 @@ function akyrwsi()
   document.getElementById('epitheto').value=" ";
   document.getElementById('til').value=" ";
   document.getElementById('metrita').selected="selected";
+  for(i=0;i<document.listForm.proion.length;i++){
+	if (document.listForm.proion[i].checked) {
+	     document.listForm.proion[i].checked=false;
+}
+}
+document.listForm.total.value = 0;
   SelectChanged1();
 }
 
